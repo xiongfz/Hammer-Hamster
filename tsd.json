@@ -1,0 +1,54 @@
+{
+  "version": "v4",
+  "repo": "borisyankov/DefinitelyTyped",
+  "ref": "master",
+  "path": "typings",
+  "bundle": "typings/tsd.d.ts",
+  "installed": {
+    "es6-promise/es6-promise.d.ts": {
+      "commit": "544a35a10866b32afda9c7f029c0764558563f4f"
+    },
+    "react/react-dom.d.ts": {
+      "commit": "1ec3d510e0c4d7c50e708ca7cb0765c7e06fa2ed"
+    },
+    "react/react.d.ts": {
+      "commit": "35b24575255b09ecdfdf80094b51165407790cbc"
+    },
+    "jquery/jquery.d.ts": {
+      "commit": "544a35a10866b32afda9c7f029c0764558563f4f"
+    },
+    "es6-collections/es6-collections.d.ts": {
+      "commit": "544a35a10866b32afda9c7f029c0764558563f4f"
+    },
+    "node/node.d.ts": {
+      "commit": "26a1f8c44f5fe76168df717020bfb93839b63db3"
+    },
+    "assertion-error/assertion-error.d.ts": {
+      "commit": "08ed4e9f1869e37e29514d862e0158b40e550232"
+    },
+    "mocha/mocha.d.ts": {
+      "commit": "2d448c0a3152e8871521848c5c2c61ab4e2a2cc9"
+    },
+    "react/react-addons-shallow-compare.d.ts": {
+      "commit": "08ed4e9f1869e37e29514d862e0158b40e550232"
+    },
+    "react/react-addons-update.d.ts": {
+      "commit": "08ed4e9f1869e37e29514d862e0158b40e550232"
+    },
+    "sinon/sinon.d.ts": {
+      "commit": "08ed4e9f1869e37e29514d862e0158b40e550232"
+    },
+    "chai/chai.d.ts": {
+      "commit": "08ed4e9f1869e37e29514d862e0158b40e550232"
+    },
+    "eventemitter2/eventemitter2.d.ts": {
+      "commit": "26a1f8c44f5fe76168df717020bfb93839b63db3"
+    },
+    "draft-js/draft-js.d.ts": {
+      "commit": "35b24575255b09ecdfdf80094b51165407790cbc"
+    },
+    "immutable/immutable.d.ts": {
+      "commit": "35b24575255b09ecdfdf80094b51165407790cbc"
+    }
+  }
+}

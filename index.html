@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" user-scalable="no" />
+
+    <title>Yezi</title>
+  </head>
+  <body>
+    <div id='yz-react-container'></div>
+  <script type="text/javascript">
+    var isProduction = location.hostname !== 'localhost';
+
+    function loadScript(n) {
+      for (var i = 0; i < n.length; i++) {
+        var s = document.createElement('script');
+        s.src = n[i];
+        s.async = false;
+        document.body.appendChild(s);
+      }
+    }
+    loadScript(isProduction ? [
+      '//cdnjs.cloudflare.com/ajax/libs/react/15.3.2/react.min.js',
+      '//cdnjs.cloudflare.com/ajax/libs/react/15.3.2/react-dom.min.js',
+      'dist/bundle.js'
+    ] : [
+      'dist/react.js',
+      'dist/react-dom.js',
+      'dist/bundle.js'
+    ]);
+
+    function loadStyle(n) {
+      for (var i = 0; i < n.length; i++) {
+        var s = document.createElement('link');
+        s.href = n[i];
+        s.rel='stylesheet';
+        s.setAttribute('rel', 'stylesheet');
+        document.head.appendChild(s);
+      }
+    }
+
+    loadStyle(isProduction ? [
+      'https://appsforoffice.microsoft.com/fabric/fabric-core/4.1.0/fabric.min.css',
+      'https://cdnjs.cloudflare.com/ajax/libs/draft-js/0.9.1/Draft.min.css'
+    ] : [
+      '/dist/css/fabric.css',
+      '/dist/css/Draft.css'
+    ])
+  </script>
+</html>
