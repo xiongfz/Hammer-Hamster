@@ -1,0 +1,28 @@
+.pageRoot {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+}
+
+.gameWrapper {
+  position: relative;
+  max-width: 90%;
+  width: 800px;
+  height: 800px;
+  margin: 0 auto;
+  display: table;
+}
+
+.gameRow {
+  display: table-row;
+}
+
+.gameCell {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+
+  button {
+    font-size: 5em;
+  }
+}

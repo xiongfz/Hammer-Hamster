@@ -4,8 +4,8 @@ let build = require('@microsoft/web-library-build');
 let gulp = require('gulp');
 let fs = require('fs');
 
-let isProduction = process.argv.indexOf( '--production' ) >= 0;
-let isNuke = process.argv.indexOf( 'nuke' ) >= 0;
+let isProduction = process.argv.indexOf('--production') >= 0;
+let isNuke = process.argv.indexOf('nuke') >= 0;
 console.log(`isProduction? (${isProduction})`);
 
 /** @todo: disable lint config. */
@@ -20,12 +20,7 @@ build.postCopy.setConfig({
       'src/**/*.png',
       'node_modules/react/dist/react.js',
       'node_modules/react-dom/dist/react-dom.js'
-    ]
-  }
-});
-
-build.postCopy.setConfig({
-  copyTo: {
+    ],
     'dist/sass': [
       'node_modules/office-ui-fabric-react/dist/sass/*.*'
     ],
