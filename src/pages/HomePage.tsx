@@ -54,7 +54,9 @@ export default class HomePage extends React.Component<IHomePageProps, IHomePageS
       <Fabric>
         <div className={ styles.pageRoot }>
           <div className={ styles.gameWrapper }>
-            { gamePane }
+            <div className={ styles.gameTable}>
+              { gamePane }
+            </div>
           </div>
         </div>
       </Fabric>
