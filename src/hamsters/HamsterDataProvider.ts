@@ -39,7 +39,7 @@ export default class HamsterDataProvider {
   private _hamsters: HamsterStatus[];
   private _width: number;
   private _height: number;
-  private _interval: NodeJS.Timer;
+  private _interval: number;
   private _isActivated: boolean;
   private _listener: (() => void)[];
 
@@ -123,13 +123,6 @@ export default class HamsterDataProvider {
 
   private _getIndexByPosition(location: location): number {
     return location.x * this.height + location.y;
-  }
-
-  private _getPositionByIndex(index: number): location {
-    return {
-      x: Math.floor(index / this.width),
-      y: index - this.width * Math.floor(index / this.width)
-    };
   }
 
   private _hamsterInterval(): void {

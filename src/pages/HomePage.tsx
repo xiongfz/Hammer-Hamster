@@ -7,10 +7,7 @@ export interface IHomePageProps extends React.HTMLProps<HTMLElement> {
 
 }
 
-export interface IHomePageStates {
-}
-
-export default class HomePage extends React.Component<IHomePageProps, IHomePageStates> {
+export default class HomePage extends React.Component<IHomePageProps> {
   private _hamsterStore: HamsterDataProvider;
   private _width: number;
   private _height: number;
@@ -47,7 +44,7 @@ export default class HomePage extends React.Component<IHomePageProps, IHomePageS
         <div className={ styles.gameRow }>
           { row }
         </div>
-      )
+      );
     }
 
     return (
@@ -62,7 +59,7 @@ export default class HomePage extends React.Component<IHomePageProps, IHomePageS
       </Fabric>
     );
   }
-  
+
   private _onItemClicked(x: number, y: number): void {
     this._hamsterStore.kickHamster({ x, y });
   }

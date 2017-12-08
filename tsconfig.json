@@ -1,18 +1,30 @@
 {
+  "exclude": [
+    "dist",
+    "node_modules",
+    "lib"
+  ],
   "compilerOptions": {
     "target": "es5",
-    "module": "commonjs",
+    "forceConsistentCasingInFileNames": true,
+    "module": "esnext",
+    "moduleResolution": "node",
     "jsx": "react",
     "declaration": true,
     "sourceMap": true,
     "experimentalDecorators": true,
-    "noEmitOnError": true,
-    "moduleResolution": "node"
-  },
-  "exclude": [
-      "node_modules",
-      "dist",
-      "lib",
-      "lib-amd"
-  ]
+    "typeRoots": [
+      "./node_modules/@types",
+      "./node_modules/@microsoft"
+    ],
+    "types": [
+      "es6-promise",
+      "webpack-env"
+    ],
+    "lib": [
+      "es5",
+      "dom",
+      "es2015.collection"
+    ]
+  }
 }

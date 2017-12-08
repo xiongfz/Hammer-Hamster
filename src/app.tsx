@@ -1,4 +1,6 @@
 import { Router, Route } from 'office-ui-fabric-react/lib/utilities/router';
+
+// tslint:disable-next-line:no-unused-variable
 import * as React from 'react';
 import * as ReactDom from 'react-dom';
 
